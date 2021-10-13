@@ -1,26 +1,30 @@
 <template>
   <div id="app">
-      <div>
-    <b-table striped hover :items="items"></b-table>
-  </div>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav class="navbar navbar-dark bg-light justify-content-beterween flex-nowarp flex-row">
+      <div class="container">
+        <router-link class="navbar-brand float-left"  to="/"><strong class=" text-uppercase">MEVN</strong></router-link>
+        <ul class="navbar navbar-nav flex-row float-right">
+          <li class="nav-item">
+            <router-link  to="/" class="btn btn-outline-primary mx-3">Create</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link  to="/view" class="btn btn-outline-success">View</router-link>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <router-view></router-view>
     </div>
-    <router-view/>
   </div>
 </template>
-<script>
-  export default {
-    data() {
-      return {
-        items: [
-          { age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
-          { age: 21, first_name: 'Larsen', last_name: 'Shaw' },
-          { age: 89, first_name: 'Geneva', last_name: 'Wilson' },
-          { age: 38, first_name: 'Jami', last_name: 'Carney' }
-        ]
-      }
-    }
-  }
-</script>
+<style>
+strong{
+  color: #42b883;
+}
+.bg{
+background: #35495e;
+}
+
+</style>
