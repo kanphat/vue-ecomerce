@@ -1,23 +1,27 @@
 <template>
-  <div class="row justify-content-center">
-      <div class="col-md-6">
-          <!-- view content goes here -->
-          <h1 class="text-center">view content goes here</h1>
-
+  <b-container fluid>
+    <div class="mt-2 table">
+        <b-table striped hover :items="items" :fields="fields" class="text-center danger" ></b-table>
       </div>
-  </div>
+  </b-container>
+  
+
 </template>
 
 <script>
 export default {
-data(){
-    return{
-        
-    }
-}
-}
+  data() {
+    return {
+      items: [
+        { no: "1", goods_name: "", price_product: "" },
+        { no: "2", first_name: "", last_name: "" },
+        { no: "3", first_name: "", last_name: "" },
+        { no: "4", first_name: "", last_name: "" },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
-
 </style>

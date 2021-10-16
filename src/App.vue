@@ -5,10 +5,10 @@
         <router-link class="navbar-brand float-left"  to="/"><strong class=" text-uppercase">MEVN</strong></router-link>
         <ul class="navbar navbar-nav flex-row float-right">
           <li class="nav-item">
-            <router-link  to="/" class="btn btn-outline-primary mx-3">Create</router-link>
+            <router-link  to="/" class="btn btn-outline-primary mx-3"><i class="fas fa-plus"></i></router-link>
           </li>
           <li class="nav-item">
-            <router-link  to="/view" class="btn btn-outline-success">View</router-link>
+            <router-link  to="/view" class="btn btn-outline-success"><i class="fas fa-th"></i></router-link>
           </li>
 
         </ul>
